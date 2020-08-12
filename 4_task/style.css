@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(230, 219, 219);
+}
+
+header {
+  background-color: rgb(163, 169, 175);
+}
+
+main p {
+  color: teal;
+}
+
+header ul li a {
+  color: rgb(5, 20, 20);
+  text-decoration: none;
+  background-color: rgb(106, 119, 119);
+}
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
