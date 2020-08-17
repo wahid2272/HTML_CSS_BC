@@ -1,9 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(230, 219, 219);
+  height: 100vh;
+}
+
+img {
+  float: left;
+  margin-right: 25px;
 }
 
 header {
   background-color: rgb(163, 169, 175);
+  padding: 20px;
 }
 
 main p {
@@ -14,11 +27,74 @@ header ul li a {
   color: rgb(5, 20, 20);
   text-decoration: none;
   background-color: rgb(106, 119, 119);
+  padding: 10px;
 }
+
 header ul {
   list-style: none;
 }
 
 header ul li {
   display: inline-block;
+  margin-right: -3px;
+}
+
+table {
+  background-color: white;
+  color: rgb(15, 53, 18);
+  border: 3px solid rgb(32, 53, 35);
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgba(68, 102, 78, 0.85);
+  color: white;
+}
+
+td {
+  border: 2px solid rgb(28, 28, 37);
+}
+tr {
+  border-bottom: 3px solid black;
+}
+
+#boxes {
+  background-color: rgba(48, 52, 77, 0.8);
+  background-image: url("http://source.unsplash.com/400x400/?water");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: rgb(236, 236, 236);
+}
+
+.box {
+  background-color: beige;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: blueviolet;
+  border: 10px solid rgb(10, 10, 10);
+}
+.box2 {
+  background-color: brown;
+  border: 10px dotted green;
+}
+.box3 {
+  background-color: black;
+  border: 10px dashed rgb(8, 12, 233);
+}
+.box4 {
+  background-color: yellowgreen;
+  border: 10px double green;
+  border-radius: 49%;
+}
+.box5 {
+  background-color: yellow;
+  border: 10px solid rgb(214, 121, 15);
+  border-radius: 70%;
 }
