@@ -1,0 +1,49 @@
+body {
+    background-color: green;
+}
+
+/* Mobile first */
+@media (min-width: 576px) {
+    body {
+        background-color: blue;
+    }
+    h1 {
+        color: blanchedalmond;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+    h1 {
+        color: blanchedalmond;
+    }
+}
+
+/* large device */
+@media (min-width: 992px) {
+    body {
+        background-color: blueviolet;
+    }
+    h1 {
+        color: blanchedalmond;
+    }
+    h1::after {
+        content: " large screen here";
+    }
+}
+
+/* extra-large device */
+@media (min-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    h1 {
+        color: blanchedalmond;
+    }
+    h1::after {
+        content: "Extra large screen here";
+    }
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+header {
+    position: fixed;
+    background-color: #333;
+    height: 50px;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 75px;
+}
+footer {
+    background-color: #333;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+}
+
+a {
+   color: aliceblue;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+    
+}
+
+a:visited {
+    color: orange;
+    text-decoration: underline;
+}
+
+p {
+    padding: 1rem;
+    color: white;
+    margin: 1rem;
+    background-color: black;
+}
+
+/* p:first-child {
+    color: black;
+    background-color: cadetblue;
+}
+
+p:last-child {
+    color: blueviolet;
+} */
+
+/* p:nth-child(2) {
+    color: green;
+    background-color: aquamarine;
+} */
+
+/* p:nth-child(even) {
+    color: rgb(16, 15, 37);
+    background-color: aquamarine;
+} */
+
+/* p:nth-child(odd) {
+    color: chocolate;
+    background-color: blueviolet;
+} */
+
+/* p:nth-child(3n) {
+    color: chocolate;
+    background-color: blueviolet;
+} */
+
+/* Hero Banner */
+
+section {
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/1600x900/?flower") no-repeat fixed center center/cover;
+}
+
+.container {
+    mask-border-width: 1000px;
+    margin: 0 auto;
+}
