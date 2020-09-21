@@ -1,19 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ul li {
+    display: inline-block;
 }
 
-body {
-    background-color: rgb(145, 146, 142);
+ul li ul {
+    visibility: hidden;
+    position: absolute;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-}
-
-.wrapper .container {
-    background-color: darkolivegreen;
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
 }
