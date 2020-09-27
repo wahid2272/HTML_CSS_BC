@@ -3,3 +3,248 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #002da2;
+    --secondary-color: #000c80;
+    --background-color: #dfdfdf;
+    --dark-color: #212529;
+    --light-color: #ffffff;
+    --font-regular: "Finlandica", sans-serif;
+    --font-bold: "FinlandicaBold", sans-serif;
+}
+
+@font-face {
+    font-family: "Finlandica";
+    src: url("assets/fonts/finlandica-regularWeb.woff2") format("woff2"),
+      url("assets/fonts/finlandica-regularWeb.woff") format("woff"),
+      url("assets/fonts/finlandica-regularWeb.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "FinlandicaBold";
+    src: url("assets/fonts/finlandica-boldWeb.woff2") format("woff2"),
+      url("assets/fonts/finlandica-boldWeb.woff") format("woff"),
+      url("assets/fonts/finlandica-boldWeb.ttf") format("truetype");
+  }
+  
+  body {
+    font-family: var(--font-regular);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-color);
+  }
+  
+  h2,
+  h4,
+  h1 span {
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+  }
+
+  .content-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-auto-rows: 150px;
+}
+
+.content-grid .item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+.content-grid .item a {
+    color: var(--light-color);
+    padding-left: 20px;
+}
+
+.content-grid .item h3:hover {
+    cursor: pointer;
+    border-bottom: 3px solid var(--light-color);
+}
+
+.content-grid .item a{
+    text-decoration: none;
+}
+
+  /* Body Area */
+
+  body .container {
+      margin-left: 8%;
+      margin-right: 8%;
+      background-color: var(--light-color);
+  }
+
+  /* Header Area */
+
+  header #logo {
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+  }
+
+  header .logo h1 {
+      color: var(--primary-color);
+      font-weight: normal;
+      text-transform: uppercase;
+      font-family: var(--font-regular);
+  }
+
+  header .logo h1 span {
+      font-weight: bold;
+  }
+
+  header a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: smaller;
+  }
+
+  header #logo a i {
+    font-size: smaller;
+  }
+
+  /* Main Nav */
+
+  header #main-nav {
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+  }
+
+  header nav ul {
+    list-style-type: none;
+}
+
+  header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+    display: block;
+    border-bottom: 3px double transparent;
+}
+
+/* Main Body */
+
+/* Hero Banner */
+
+main #hero-banner {
+    background: url("https://source.unsplash.com/1600x900/?people") no-repeat fixed center center/cover;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main .hero-banner-content {
+    color: white;
+    text-align: center;
+    font-family: var(--font-regular);
+    text-transform: uppercase;
+    padding: 20%;
+}
+
+main .hero-banner-content h1 {
+    padding: 24px;
+    font-size: 6rem;
+    font-weight: lighter;
+}
+
+main .hero-banner-content h1 span {
+    font-weight: bold;
+}
+
+main .hero-banner-content p {
+    font-size: 1.5rem;
+}
+
+main .hero-banner-content p span {
+    padding-top: 5px;
+}
+
+/* Section Category */
+
+main #category {
+    padding: 50px;
+}
+
+main #category h2 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-family: var(--font-regular);
+    margin-bottom: 1rem;
+}
+
+main #category p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Section Region */
+
+main #region {
+    padding: 100px 50px;
+}
+
+main #region h2 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-family: var(--font-regular);
+    margin-bottom: 1rem;
+}
+
+main #region p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+main #region button {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: inherit;
+    margin-bottom: 3rem;
+}
+
+main #region button a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+/* Footer Section */
+
+footer {
+    background-color: var(--primary-color);
+}
+footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 60px 50px;
+}
+
+footer .footer-logo {
+    color: var(--light-color);
+}
+
+footer .footer-logo h4 {
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: lighter;
+}
+
+footer .footer-logo h4 span {
+    font-weight: bold;
+}
+ 
