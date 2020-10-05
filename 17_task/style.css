@@ -1,0 +1,224 @@
+:root {
+  --font: 'Open Sans', sans-serif;
+}
+
+/* Background Animation */
+
+body {
+	background: linear-gradient(-45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding : 30px;
+  font-family: var(--font);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Task 1 */
+
+.first-task {
+  background: green;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transition: all 2s;
+}
+
+.first-task:hover {
+  height: 200px;
+  width: 200px;
+  background: darkgreen;
+  border-radius: 50%;
+}
+
+/* Task 2 */
+
+.second-task {
+  background: #202526;
+  height: 100px;
+  width: 100px;
+  transition: all 1s;
+}
+
+.second-task:hover {
+  background: #0b4e5c;
+  height: 80px;
+  width: 80px;
+  transform: rotate(180deg);
+}
+
+/* Task 3 */
+
+.third-task {
+  background: #545c0b;
+  height: 150px;
+  width: 150px;
+  color: #545c0b;
+  transition: all 1s;
+}
+
+.third-task:hover {
+  background: #545c0b;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Task 5 */
+
+.fifth-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background: #0b4e5c;
+}
+
+/* Top Side */
+.fifth-task::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  width: 0;
+  border-top: 3px solid saddlebrown;
+  transition: all 1s;
+}
+.fifth-task:hover::before {
+  width: 100%;
+}
+
+/* Right Side */
+
+.fifth-task::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-right: 3px solid black;
+  transition: all 1s;
+}
+.fifth-task:hover::after {
+  top: 0;
+}
+
+/* Bottom Side */
+
+.fifth-task h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid black;
+  transition: all 1s;
+}
+.fifth-task:hover h3::before {
+  left: 0;
+}
+
+/* Left Side */
+
+.fifth-task h3::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  right: 0;
+  border-left: 3px solid saddlebrown;
+  transition: all 1s;
+}
+.fifth-task:hover h3::after {
+  bottom: 0;
+}
+
+.animated-circle {
+    background-image: radial-gradient(rgb(126, 126, 59) 10%, rgb(32, 110, 42) 50%, green);
+    height: 150px;
+    width: 150px;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: all 2s;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes animation {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+  }
+
+  25% {
+    top: 0;
+    left: 200px;
+    background-color: cadetblue;
+    border-radius: 2px;
+  }
+
+  50% {
+    top: 200px;
+    left: 200px;
+    background-color: darkgreen;
+    border-radius: 2px;
+  }
+
+  75% {
+    top: 200px;
+    left: 0;
+    background-color: olivedrab;
+    border-radius: 2px;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+ 
+}
+
+/* .animated-circle:hover {
+  background-image: radial-gradient(rgb(126, 126, 59) 10%, rgb(32, 110, 42) 50%, green);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--dark-color);
+  transition: all 2s;
+  position: absolute;
+} */
