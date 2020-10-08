@@ -1,0 +1,77 @@
+:root {
+  --primary-color:#008E9B;
+  --background-color: #0A192F;
+  --light-color: #e7e7e7;
+  --warning-color: #99911d;
+  --font: 'Noto Serif', serif;
+  --background-color-rgb: 10, 25, 47;
+}
+
+.about-container {
+  max-width: 1200px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  min-height: 25vh;
+}
+
+body {
+  background: linear-gradient(-45deg, #8ee41f, #162f44, #2a4b10, #23d5ab);
+	background-size: 400% 400%;
+	animation: background-animation 15s ease infinite;
+}
+
+@keyframes background-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body .about-container{
+  display: grid;
+  grid-template-columns: 700px auto;
+  grid-template-rows: auto;
+  padding-bottom: 10rem;
+}
+
+body .about-box {
+  padding: 15rem 15rem 15rem 0;
+  background: url("https://source.unsplash.com/900x500/?laptop") no-repeat;
+  opacity: 0.7;
+}
+
+body .info {
+  color: var(--primary-color);
+  background-color: rgba(var(--background-color-rgb), 0.9);
+  text-align: center;
+}
+
+body .info h1 {
+  padding-top: 9rem;
+}
+
+body .info h1 a {
+  color: var(--warning-color);
+  letter-spacing: .1em;
+  transition: text-shadow .3s;
+}
+
+body .info h1 a:hover {
+  background-color: var(--primary-color);
+  text-shadow: 0 0 .65px var(--primary-color), 0 0 .65px var(--primary-color);
+}
+
+body .info .icon {
+  text-align: center;
+}
+
+body .info .icon i {
+  color: var(--primary-color);
+}
