@@ -1,0 +1,19 @@
+body {
+  background: darkslategrey;
+  color: rgb(253, 246, 246);
+  font-family: Verdana, sans-serif;
+  padding: 5px;
+  line-height: 3rem;
+}
+
+small {
+  color: rgb(196, 56, 56);
+}
+
+#some_meaningful_name {
+  color: rgb(235, 191, 134);
+}
+
+.my_super_class {
+  color: rgb(9, 247, 9);
+}
